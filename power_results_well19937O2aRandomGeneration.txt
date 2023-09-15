@@ -1,0 +1,300 @@
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  33247
+
+--------------------------
+Total energy: 198.54 Joules, including:
+	CPU energy: 198.54 Joules
+	GPU energy: 0.00 Joules
+--------------------------
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  33250
+
+--------------------------
+Total energy: 197.59 Joules, including:
+	CPU energy: 197.59 Joules
+	GPU energy: 0.00 Joules
+--------------------------
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  33253
+
+--------------------------
+Total energy: 201.27 Joules, including:
+	CPU energy: 201.27 Joules
+	GPU energy: 0.00 Joules
+--------------------------
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  33256
+
+--------------------------
+Total energy: 197.52 Joules, including:
+	CPU energy: 197.52 Joules
+	GPU energy: 0.00 Joules
+--------------------------
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  33259
+
+--------------------------
+Total energy: 201.03 Joules, including:
+	CPU energy: 201.03 Joules
+	GPU energy: 0.00 Joules
+--------------------------
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  33262
+
+--------------------------
+Total energy: 197.91 Joules, including:
+	CPU energy: 197.91 Joules
+	GPU energy: 0.00 Joules
+--------------------------
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  33265
+
+--------------------------
+Total energy: 197.59 Joules, including:
+	CPU energy: 197.59 Joules
+	GPU energy: 0.00 Joules
+--------------------------
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  33268
+
+--------------------------
+Total energy: 201.18 Joules, including:
+	CPU energy: 201.18 Joules
+	GPU energy: 0.00 Joules
+--------------------------
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  33271
+
+--------------------------
+Total energy: 197.65 Joules, including:
+	CPU energy: 197.65 Joules
+	GPU energy: 0.00 Joules
+--------------------------
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  33274
+
+--------------------------
+Total energy: 197.49 Joules, including:
+	CPU energy: 197.49 Joules
+	GPU energy: 0.00 Joules
+--------------------------
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  33277
+
+--------------------------
+Total energy: 198.30 Joules, including:
+	CPU energy: 198.30 Joules
+	GPU energy: 0.00 Joules
+--------------------------
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  33280
+
+--------------------------
+Total energy: 197.25 Joules, including:
+	CPU energy: 197.25 Joules
+	GPU energy: 0.00 Joules
+--------------------------
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  33283
+
+--------------------------
+Total energy: 196.99 Joules, including:
+	CPU energy: 196.99 Joules
+	GPU energy: 0.00 Joules
+--------------------------
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  33286
+
+--------------------------
+Total energy: 197.95 Joules, including:
+	CPU energy: 197.95 Joules
+	GPU energy: 0.00 Joules
+--------------------------
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  33289
+
+--------------------------
+Total energy: 198.02 Joules, including:
+	CPU energy: 198.02 Joules
+	GPU energy: 0.00 Joules
+--------------------------
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  33292
+
+--------------------------
+Total energy: 200.66 Joules, including:
+	CPU energy: 200.66 Joules
+	GPU energy: 0.00 Joules
+--------------------------
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  33296
+
+--------------------------
+Total energy: 197.54 Joules, including:
+	CPU energy: 197.54 Joules
+	GPU energy: 0.00 Joules
+--------------------------
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  33299
+
+--------------------------
+Total energy: 197.61 Joules, including:
+	CPU energy: 197.61 Joules
+	GPU energy: 0.00 Joules
+--------------------------
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  33302
+
+--------------------------
+Total energy: 200.97 Joules, including:
+	CPU energy: 200.97 Joules
+	GPU energy: 0.00 Joules
+--------------------------
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  33305
+
+--------------------------
+Total energy: 197.48 Joules, including:
+	CPU energy: 197.48 Joules
+	GPU energy: 0.00 Joules
+--------------------------
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  33308
+
+--------------------------
+Total energy: 200.44 Joules, including:
+	CPU energy: 200.44 Joules
+	GPU energy: 0.00 Joules
+--------------------------
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  33311
+
+--------------------------
+Total energy: 198.06 Joules, including:
+	CPU energy: 198.06 Joules
+	GPU energy: 0.00 Joules
+--------------------------
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  33315
+
+--------------------------
+Total energy: 197.61 Joules, including:
+	CPU energy: 197.61 Joules
+	GPU energy: 0.00 Joules
+--------------------------
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  33318
+
+--------------------------
+Total energy: 200.68 Joules, including:
+	CPU energy: 200.68 Joules
+	GPU energy: 0.00 Joules
+--------------------------
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  33321
+
+--------------------------
+Total energy: 197.47 Joules, including:
+	CPU energy: 197.47 Joules
+	GPU energy: 0.00 Joules
+--------------------------
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  33324
+
+--------------------------
+Total energy: 197.10 Joules, including:
+	CPU energy: 197.10 Joules
+	GPU energy: 0.00 Joules
+--------------------------
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  33327
+
+--------------------------
+Total energy: 201.00 Joules, including:
+	CPU energy: 201.00 Joules
+	GPU energy: 0.00 Joules
+--------------------------
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  33330
+
+--------------------------
+Total energy: 197.12 Joules, including:
+	CPU energy: 197.12 Joules
+	GPU energy: 0.00 Joules
+--------------------------
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  33335
+
+--------------------------
+Total energy: 201.50 Joules, including:
+	CPU energy: 201.50 Joules
+	GPU energy: 0.00 Joules
+--------------------------
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  33352
+
+--------------------------
+Total energy: 197.31 Joules, including:
+	CPU energy: 197.31 Joules
+	GPU energy: 0.00 Joules
+--------------------------

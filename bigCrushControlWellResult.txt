@@ -1,0 +1,5 @@
+./scriptRunControlBigCrush.sh : ligne 13 : 61638 Erreur de segmentation  ./controlTestRealWell
+
+real	0m0,031s
+user	0m0,001s
+sys	0m0,030s

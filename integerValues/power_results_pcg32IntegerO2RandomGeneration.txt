@@ -1,0 +1,150 @@
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  491167
+Error reading /proc/491167/stat file
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  491170
+Error reading /proc/491170/stat file
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  491173
+Error reading /proc/491173/stat file
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  491176
+Error reading /proc/491176/stat file
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  491179
+Error reading /proc/491179/stat file
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  491182
+Error reading /proc/491182/stat file
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  491185
+Error reading /proc/491185/stat file
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  491188
+Error reading /proc/491188/stat file
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  491191
+Error reading /proc/491191/stat file
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  491194
+Error reading /proc/491194/stat file
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  491197
+Error reading /proc/491197/stat file
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  491200
+Error reading /proc/491200/stat file
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  491203
+Error reading /proc/491203/stat file
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  491206
+Error reading /proc/491206/stat file
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  491210
+Error reading /proc/491210/stat file
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  491213
+Error reading /proc/491213/stat file
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  491216
+Error reading /proc/491216/stat file
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  491219
+Error reading /proc/491219/stat file
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  491222
+Error reading /proc/491222/stat file
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  491225
+Error reading /proc/491225/stat file
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  491228
+Error reading /proc/491228/stat file
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  491231
+Error reading /proc/491231/stat file
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  491234
+Error reading /proc/491234/stat file
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  491237
+Error reading /proc/491237/stat file
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  491240
+Error reading /proc/491240/stat file
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  491243
+Error reading /proc/491243/stat file
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  491246
+Error reading /proc/491246/stat file
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  491249
+Error reading /proc/491249/stat file
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  491252
+Error reading /proc/491252/stat file
+System info:
+	Platform: amd
+	Intel RAPL pkg: TRUE
+Monitoring PID:  491256
+Error reading /proc/491256/stat file

@@ -13,6 +13,7 @@ Notice:     This code can be used freely for personal, academic,
 
 **************************************************************************/
 #include "well19937a.h"
+#include <stdio.h>
 
 
 #define W 32

@@ -7,7 +7,9 @@ for small operations, like generating a single random number, the overhead of us
 We will compare generation one by one and in batch, for classic and ML technologies.
 """
 
+"""
 
+DEPRECATED
 def generate_one_by_one_tf(n):
     tf.random.set_seed(0)
     for _ in range(n):
@@ -15,5 +17,12 @@ def generate_one_by_one_tf(n):
         del number
         gc.collect()
         
+"""
+def generate_one_by_one_tf(n):
+    generator = tf.random.Generator.from_seed(0, alg="philox")
+    for _ in range(n):
+        number = generator.uniform([])
+
+
 
 generate_one_by_one_tf(2**30)

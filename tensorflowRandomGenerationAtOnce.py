@@ -6,9 +6,18 @@ for small operations, like generating a single random number, the overhead of us
 
 We will compare generation one by one and in batch, for classic and ML technologies.
 """
-
+"""
+DEPRECATED 
 def generate_at_once_tf(n):
     tf.random.set_seed(0)
     numbers = tf.random.uniform([n]).numpy()
+
+generate_at_once_tf(2**30)
+
+"""
+
+def generate_at_once_tf(n):
+    generator = tf.random.Generator.from_seed(0, alg="philox")
+    numbers = generator.uniform([n])
 
 generate_at_once_tf(2**30)

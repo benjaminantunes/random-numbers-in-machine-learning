@@ -6,8 +6,8 @@
 #gcc -O2 mrgSaving.c -o mrgSaving
 #(time ./mrgSaving) 2> timeMrgSaving.txt
 
-gcc -O2 wellSaving.c -o wellSaving
-(time ./wellSaving) 2> timeWellSaving.txt
+#gcc -O2 wellSaving.c -o wellSaving
+#(time ./wellSaving) 2> timeWellSaving.txt
 
 #gcc -I./pcg-c-0.94/include -std=c99 -L./pcg-c-0.94/src pcg64Saving.c -lpcg_random -O2 -o pcgSaving
 #(time ./pcgSaving) 2> timePcgSaving.txt

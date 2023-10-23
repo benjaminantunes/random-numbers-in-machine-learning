@@ -121,11 +121,12 @@
 ###########################################
 ###########################################
 
-### WARNING
-##I am forced to not do this experiment : 
-## For an obscure reason, it takes more than 30 hours, a lot of RAM, and so on....
-## Looks like tensorflow is really not made to generate random numbers ...
-## Name of the files to store results
+## WARNING
+#I am forced to not do this experiment : 
+# For an obscure reason, it takes more than 30 hours, a lot of RAM, and so on....
+# Looks like tensorflow is really not made to generate random numbers ...
+# It works for 32 bits integer numbers, but not for 64 bits real [0,1] numbers
+# Name of the files to store results
 #TIME_FILE="time_results_tensorflowRandomGenerationOneByOne.txt"
 #POWER_FILE="power_results_tensorflowRandomGenerationOneByOne.txt"
 
@@ -278,39 +279,39 @@
 ############################################
 ############################################
 
-## Name of the files to store results
-#TIME_FILE="time_results_tensorflowRandomGenerationAtOnce.txt"
-#POWER_FILE="power_results_tensorflowRandomGenerationAtOnce.txt"
+# Name of the files to store results
+TIME_FILE="time_results_tensorflowRandomGenerationAtOnce.txt"
+POWER_FILE="power_results_tensorflowRandomGenerationAtOnce.txt"
 
-## Clean any existing result files
-#> $TIME_FILE
-#> $POWER_FILE
+# Clean any existing result files
+> $TIME_FILE
+> $POWER_FILE
 
-## Repeat the process 30 times
-#for i in {1..30}
-#do
-#    # Measure the time using built-in time and append to time_results.txt
-#    (time python3 tensorflowRandomGenerationAtOnce.py) 2>> $TIME_FILE
+# Repeat the process 30 times
+for i in {1..30}
+do
+    # Measure the time using built-in time and append to time_results.txt
+    (time python3 tensorflowRandomGenerationAtOnce.py) 2>> $TIME_FILE
 
-#done
-
-
-#for i in {1..30}
-#do
-#    # powerjoular measures the power consumption in joule by minutes
-#    # Append the result to power_results.txt
-#    
-#    python3 tensorflowRandomGenerationAtOnce.py &          
-#	PROGRAM_PID=$!          
-#    
-#	powerjoular -p $PROGRAM_PID >> $POWER_FILE &
-#	POWERJOULAR_PID=$!
-#	sleep 4
-#	kill -INT $POWERJOULAR_PID
-#	kill -INT $PROGRAM_PID
+done
 
 
-#done
+for i in {1..30}
+do
+    # powerjoular measures the power consumption in joule by minutes
+    # Append the result to power_results.txt
+    
+    python3 tensorflowRandomGenerationAtOnce.py &          
+	PROGRAM_PID=$!          
+    
+	powerjoular -p $PROGRAM_PID >> $POWER_FILE &
+	POWERJOULAR_PID=$!
+	sleep 4
+	kill -INT $POWERJOULAR_PID
+	kill -INT $PROGRAM_PID
+
+
+done
 
 ####---- ALL AT ONCE (tensor from ML technologies) prn generation TASKSET ----#####
 
@@ -430,21 +431,60 @@
 ############################################
 ############################################
 
+# Name of the files to store results
+TIME_FILE="time_results_tensorflowTasksetRandomGenerationAtOnce.txt"
+POWER_FILE="power_results_tensorflowTasksetRandomGenerationAtOnce.txt"
+
+# Clean any existing result files
+> $TIME_FILE
+> $POWER_FILE
+
+# Repeat the process 30 times
+for i in {1..30}
+do
+    # Measure the time using built-in time and append to time_results.txt
+    (time taskset -c 100 python3 tensorflowRandomGenerationAtOnce.py) 2>> $TIME_FILE
+
+done
+
+
+for i in {1..30}
+do
+    # powerjoular measures the power consumption in joule by minutes
+    # Append the result to power_results.txt
+    
+    (taskset -c 100 python3 tensorflowRandomGenerationAtOnce.py) &          
+	PROGRAM_PID=$!          
+    
+	powerjoular -p $PROGRAM_PID >> $POWER_FILE &
+	POWERJOULAR_PID=$!
+	sleep 4
+	kill -INT $POWERJOULAR_PID
+	kill -KILL $PROGRAM_PID
+
+
+done
+
+####################
+#####################
+######################
+#########################
+
 ## Name of the files to store results
-##TIME_FILE="time_results_tensorflowTasksetRandomGenerationAtOnce.txt"
-#POWER_FILE="power_results_tensorflowTasksetRandomGenerationAtOnce.txt"
+#TIME_FILE="time_results_numpyMtRandomGenerationAtOnce.txt"
+#POWER_FILE="power_results_numpyMtRandomGenerationAtOnce.txt"
 
 ## Clean any existing result files
-##> $TIME_FILE
+#> $TIME_FILE
 #> $POWER_FILE
 
-### Repeat the process 30 times
-##for i in {1..30}
-##do
-##    # Measure the time using built-in time and append to time_results.txt
-##    (time taskset -c 100 python3 tensorflowRandomGenerationAtOnce.py) 2>> $TIME_FILE
+## Repeat the process 30 times
+#for i in {1..30}
+#do
+#    # Measure the time using built-in time and append to time_results.txt
+#    (time python3 numpyMtRandomGenerationAtOnce.py) 2>> $TIME_FILE
 
-##done
+#done
 
 
 #for i in {1..30}
@@ -452,158 +492,119 @@
 #    # powerjoular measures the power consumption in joule by minutes
 #    # Append the result to power_results.txt
 #    
-#    (taskset -c 100 python3 tensorflowRandomGenerationAtOnce.py) &          
+#    python3 numpyMtRandomGenerationAtOnce.py &          
 #	PROGRAM_PID=$!          
-#    
+
 #	powerjoular -p $PROGRAM_PID >> $POWER_FILE &
 #	POWERJOULAR_PID=$!
 #	sleep 4
 #	kill -INT $POWERJOULAR_PID
-#	kill -KILL $PROGRAM_PID
+#	kill -INT $PROGRAM_PID
 
 
 #done
 
-####################
-#####################
-######################
-#########################
 
-# Name of the files to store results
-TIME_FILE="time_results_numpyMtRandomGenerationAtOnce.txt"
-POWER_FILE="power_results_numpyMtRandomGenerationAtOnce.txt"
+## Name of the files to store results
+#TIME_FILE="time_results_numpyPhiloxRandomGenerationAtOnce.txt"
+#POWER_FILE="power_results_numpyPhiloxRandomGenerationAtOnce.txt"
 
-# Clean any existing result files
-> $TIME_FILE
-> $POWER_FILE
+## Clean any existing result files
+#> $TIME_FILE
+#> $POWER_FILE
 
-# Repeat the process 30 times
-for i in {1..30}
-do
-    # Measure the time using built-in time and append to time_results.txt
-    (time python3 numpyMtRandomGenerationAtOnce.py) 2>> $TIME_FILE
+## Repeat the process 30 times
+#for i in {1..30}
+#do
+#    # Measure the time using built-in time and append to time_results.txt
+#    (time python3 numpyPhiloxRandomGenerationAtOnce.py) 2>> $TIME_FILE
 
-done
+#done
 
 
-for i in {1..30}
-do
-    # powerjoular measures the power consumption in joule by minutes
-    # Append the result to power_results.txt
-    
-    python3 numpyMtRandomGenerationAtOnce.py &          
-	PROGRAM_PID=$!          
+#for i in {1..30}
+#do
+#    # powerjoular measures the power consumption in joule by minutes
+#    # Append the result to power_results.txt
+#    
+#    python3 numpyPhiloxRandomGenerationAtOnce.py &          
+#	PROGRAM_PID=$!          
 
-	powerjoular -p $PROGRAM_PID >> $POWER_FILE &
-	POWERJOULAR_PID=$!
-	sleep 4
-	kill -INT $POWERJOULAR_PID
-	kill -INT $PROGRAM_PID
-
-
-done
+#	powerjoular -p $PROGRAM_PID >> $POWER_FILE &
+#	POWERJOULAR_PID=$!
+#	sleep 4
+#	kill -INT $POWERJOULAR_PID
+#	kill -INT $PROGRAM_PID
 
 
-# Name of the files to store results
-TIME_FILE="time_results_numpyPhiloxRandomGenerationAtOnce.txt"
-POWER_FILE="power_results_numpyPhiloxRandomGenerationAtOnce.txt"
+#done
 
-# Clean any existing result files
-> $TIME_FILE
-> $POWER_FILE
+## Name of the files to store results
+#TIME_FILE="time_results_numpyMtRandomGenerationOneByOne.txt"
+#POWER_FILE="power_results_numpyMtRandomGenerationOneByOne.txt"
 
-# Repeat the process 30 times
-for i in {1..30}
-do
-    # Measure the time using built-in time and append to time_results.txt
-    (time python3 numpyPhiloxRandomGenerationAtOnce.py) 2>> $TIME_FILE
+## Clean any existing result files
+#> $TIME_FILE
+#> $POWER_FILE
 
-done
+## Repeat the process 30 times
+#for i in {1..30}
+#do
+#    # Measure the time using built-in time and append to time_results.txt
+#    (time python3 numpyMtRandomGenerationOneByOne.py) 2>> $TIME_FILE
 
-
-for i in {1..30}
-do
-    # powerjoular measures the power consumption in joule by minutes
-    # Append the result to power_results.txt
-    
-    python3 numpyPhiloxRandomGenerationAtOnce.py &          
-	PROGRAM_PID=$!          
-
-	powerjoular -p $PROGRAM_PID >> $POWER_FILE &
-	POWERJOULAR_PID=$!
-	sleep 4
-	kill -INT $POWERJOULAR_PID
-	kill -INT $PROGRAM_PID
+#done
 
 
-done
-
-# Name of the files to store results
-TIME_FILE="time_results_numpyMtRandomGenerationOneByOne.txt"
-POWER_FILE="power_results_numpyMtRandomGenerationOneByOne.txt"
-
-# Clean any existing result files
-> $TIME_FILE
-> $POWER_FILE
-
-# Repeat the process 30 times
-for i in {1..30}
-do
-    # Measure the time using built-in time and append to time_results.txt
-    (time python3 numpyMtRandomGenerationOneByOne.py) 2>> $TIME_FILE
-
-done
+#for i in {1..30}
+#do
+#    # powerjoular measures the power consumption in joule by minutes
+#    # Append the result to power_results.txt
+#    
+#    python3 numpyMtRandomGenerationOneByOne.py &          
+#	PROGRAM_PID=$!          
+#    
+#	powerjoular -p $PROGRAM_PID >> $POWER_FILE &
+#	POWERJOULAR_PID=$!
+#	sleep 30
+#	kill -INT $POWERJOULAR_PID
+#	kill -INT $PROGRAM_PID
 
 
-for i in {1..30}
-do
-    # powerjoular measures the power consumption in joule by minutes
-    # Append the result to power_results.txt
-    
-    python3 numpyMtRandomGenerationOneByOne.py &          
-	PROGRAM_PID=$!          
-    
-	powerjoular -p $PROGRAM_PID >> $POWER_FILE &
-	POWERJOULAR_PID=$!
-	sleep 30
-	kill -INT $POWERJOULAR_PID
-	kill -INT $PROGRAM_PID
+#done
 
 
-done
+## Name of the files to store results
+#TIME_FILE="time_results_numpyPhiloxRandomGenerationOneByOne.txt"
+#POWER_FILE="power_results_numpyPhiloxRandomGenerationOneByOne.txt"
+
+## Clean any existing result files
+#> $TIME_FILE
+#> $POWER_FILE
+
+## Repeat the process 30 times
+#for i in {1..30}
+#do
+#    # Measure the time using built-in time and append to time_results.txt
+#    (time python3 numpyPhiloxRandomGenerationOneByOne.py) 2>> $TIME_FILE
+
+#done
 
 
-# Name of the files to store results
-TIME_FILE="time_results_numpyPhiloxRandomGenerationOneByOne.txt"
-POWER_FILE="power_results_numpyPhiloxRandomGenerationOneByOne.txt"
-
-# Clean any existing result files
-> $TIME_FILE
-> $POWER_FILE
-
-# Repeat the process 30 times
-for i in {1..30}
-do
-    # Measure the time using built-in time and append to time_results.txt
-    (time python3 numpyPhiloxRandomGenerationOneByOne.py) 2>> $TIME_FILE
-
-done
+#for i in {1..30}
+#do
+#    # powerjoular measures the power consumption in joule by minutes
+#    # Append the result to power_results.txt
+#    
+#    python3 numpyPhiloxRandomGenerationOneByOne.py &          
+#	PROGRAM_PID=$!          
+#    
+#	powerjoular -p $PROGRAM_PID >> $POWER_FILE &
+#	POWERJOULAR_PID=$!
+#	sleep 30
+#	kill -INT $POWERJOULAR_PID
+#	kill -INT $PROGRAM_PID
 
 
-for i in {1..30}
-do
-    # powerjoular measures the power consumption in joule by minutes
-    # Append the result to power_results.txt
-    
-    python3 numpyPhiloxRandomGenerationOneByOne.py &          
-	PROGRAM_PID=$!          
-    
-	powerjoular -p $PROGRAM_PID >> $POWER_FILE &
-	POWERJOULAR_PID=$!
-	sleep 30
-	kill -INT $POWERJOULAR_PID
-	kill -INT $PROGRAM_PID
-
-
-done
+#done
 

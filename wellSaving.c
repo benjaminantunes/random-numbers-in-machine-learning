@@ -197,9 +197,9 @@ int main() {
     }
   
     unsigned long long times = 1ULL << 39; // 2^39
-    unsigned int initial_zero_state[R] = {0};
+    unsigned int initial_one_state[R] = {1};
   
-    InitWELLRNG19937a(initial_zero_state);
+    InitWELLRNG19937a(initial_one_state);
   
     for (unsigned long long i = 0; i < times; i++) {
         double number = WELLRNG19937a();

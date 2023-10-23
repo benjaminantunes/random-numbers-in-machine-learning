@@ -6,6 +6,8 @@
  #define a13n     810728.0
  #define a21      527612.0
  #define a23n    1370589.0
+ 
+ #include <stdio.h>
 
  static double s10 = 12345, s11 = 12345, s12 = 123,
                s20 = 12345, s21 = 12345, s22 = 123;
@@ -28,3 +30,5 @@
     if (p1 <= p2) return ((p1 - p2 + m1) * norm);
     else return ((p1 - p2) * norm);
  }
+ 
+

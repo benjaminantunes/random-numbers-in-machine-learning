@@ -1,0 +1,10 @@
+Generator,Number of Failed Tests,Failed Tests
+philoxInt32,6,"34 Gap, 35 Gap, 36 Gap, 37 Gap, 65 SumCollector 68 MatrixRank,"
+pytorchInt32,3,"77 RandomWalk1 80 LinearComp, 81 LinearComp,"
+pcgInt32,1,"5 CollisionOver,"
+mtInt32,2,"80 LinearComp, 81 LinearComp,"
+numpyMtInt32,1,"80 LinearComp,"
+numpyPhiloxInt32,1,"49 MaxOft,"
+numpyInt32,0,
+tensorflowInt32,1,"9 CollisionOver,"
+pythonInt32,0,

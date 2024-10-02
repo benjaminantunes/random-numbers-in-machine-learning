@@ -8,3 +8,5 @@ The folder realValues contains the tests made on 64 bits double pseudo random nu
 
 Link of the paper : https://arxiv.org/pdf/2401.17345 
 
+
+In the two folders, you should open Jupyter notebook. Experiments are described inside it.
